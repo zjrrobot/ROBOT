@@ -2,7 +2,9 @@
 
 ## 步骤1：安装Git 
 
-1. Git官网下载地址：https://git-scm.com/download/win
+1. Git官网下载地址：
+
+    https://git-scm.com/download/win
 
 2. 点页面里的 Download Windows，下载最新64位安装包
 
@@ -53,7 +55,9 @@ finish
 
 ## Github注册账号
 
-**1.浏览器输入www.github.com**
+**1.浏览器输入**
+
+    ww.github.com
 
 **2.注册账号**
 
@@ -78,11 +82,11 @@ Create account
 
 打开刚才的小弹窗输入下面几行。
 
-git config --global user.name "你的用户名"
+    git config --global user.name "你的用户名"
 
-git config --global user.email "你的邮箱"
+    git config --global user.email "你的邮箱"
 
-git config --global --list
+    git config --global --list
 
 *注：写一行，回车之后再写一行*
 
@@ -95,7 +99,7 @@ git config --global --list
 
 在弹窗中输入
 
-ssh-keygen -t ed25519 -C "你的邮箱"
+     ssh-keygen -t ed25519 -C "你的邮箱"
 
 点击三下回车键
 
@@ -113,15 +117,15 @@ ssh-keygen -t ed25519 -C "你的邮箱"
 
 **4.打开Github网站**
 
-    1.点击头像，打开设置图标（setting）
+- 点击头像，打开设置图标（setting）
 
-    2.打开SSH和GPG keys
+- 打开SSH和GPG keys
 
-    3.设置新的SSH密钥
+- 设置新的SSH密钥
 
-    4.在大的输入框里粘贴3中复制的东西
+- 在大的输入框里粘贴3中复制的东西
 
-    5.标题可以随便起（例如：用户名+SSH
+- 标题可以随便起（例如：用户名+SSH
 
 **5.打开小弹窗**
 
@@ -143,13 +147,13 @@ yes+回车
 
 **6.在网页上创建一个新仓库**
 
-    1.打开Github网页
+- 打开Github网页
 
-    2.创建一个新仓库。
+- 创建一个新仓库。
 
-    3.填仓库名（纯英文，不要中文空格），描述随便写
+- 填仓库名（纯英文，不要中文空格），描述随便写
 
-    4.不要勾选 Add a README file（选空白仓库），拉到最下面点 Create repository
+- 不要勾选 Add a README file（选空白仓库），拉到最下面点 Create repository
 
 **7.中间蓝色方块中切换到SSH标签，复制**
 
@@ -157,32 +161,38 @@ yes+回车
 
 **8.建立存储笔记的文件夹**
 
-    1.先新建一个空白文件夹，比如取名  ROBOT ，点进去进入文件夹内部（地址栏显示的是这个文件夹路径）
+- 先新建一个空白文件夹，比如取名  ROBOT ，点进去进入文件夹内部（地址栏显示的是这个文件夹路径）
 
-    2. 在文件夹空白的地方按住Shift键不放 + 鼠标右键单击空白处
+- 在文件夹空白的地方按住Shift键不放 + 鼠标右键单击空白处
 
-    3. 右键菜单里就会多出两项：Git Bash Here、Open Git GUI Here点 Git Bash Here，弹出的终端当前路径就自动定位到这个文件夹了，不用cd切换路径，直接输命令就行。
+- 右键菜单里就会多出两项：Git Bash Here、Open Git GUI Here点 Git Bash Here，弹出的终端当前路径就自动定位到这个文件夹了，不用cd切换路径，直接输命令就行。
 
-    4.按下面一行输完敲一次回车，严格按顺序来，不要跳步：
+- 按下面一行输完敲一次回车，严格按顺序来，不要跳步：
  
-         1. 先初始化仓库（必须第一步）
+     1. 先初始化仓库（必须第一步）在弹窗中输入：
+
              git init
-             执行完会生成隐藏的  .git  文件夹
 
-         2. 生成一个README文件（不然空仓库没法提交）
-             echo "# ROBOT competition project" >> 
-             README.md
+     执行完会生成隐藏的  .git  文件夹
+    
+     2. 生成一个README文件（不然空仓库没法提交）
 
-         3. 把当前所有文件加入暂存
+            echo "# ROBOT competition project" >> README.md
+
+     3. 把当前所有文件加入暂存
+
          git add .
+         
+     4. 提交到本地仓库
 
-         4. 提交到本地仓库
          git commit -m "init robot project"
 
-         5. 绑定GitHub远程仓库
+     5. 绑定GitHub远程仓库
+
           git remote add origin +你复制的7.的内容
          
-         6. 第一次推送到远程main分支
+     6. 第一次推送到远程main分支
+
          git push -u origin main
 
  
