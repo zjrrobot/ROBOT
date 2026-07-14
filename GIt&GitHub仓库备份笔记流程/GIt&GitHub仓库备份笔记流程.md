@@ -133,7 +133,7 @@ Create account
 
 ![截图](pic/github4.png)
 
-**输入ssh -T git@github.com**
+     输入ssh -T git@github.com
 
 ![截图](pic/github5.png)
 
