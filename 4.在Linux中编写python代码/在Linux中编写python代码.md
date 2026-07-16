@@ -1,4 +1,5 @@
-# 在Linus中编写python代码
+# 在Linux中编写python代码
+
 **1.打开VScode**
    
    ![截图](pic/p1.png)
