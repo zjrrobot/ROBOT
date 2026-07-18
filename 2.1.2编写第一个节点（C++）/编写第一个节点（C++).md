@@ -70,12 +70,16 @@ text_args.cpp文件与ros_cpp_node.cpp基本一致。
 
 结果如下：
 
-![alt text](e5915fa1984b5d0fbeb9cdba222ea3b9.png)
+![alt text](pic/e5915fa1984b5d0fbeb9cdba222ea3b9.png)
 
 新开一个终端，看看是否可以正常运行。
 
-![alt text](3d993c0eb5f56cdf71ed4c8d9dabe7e3.png)
+![alt text](pic/3d993c0eb5f56cdf71ed4c8d9dabe7e3.png)
 
+查看节点内容：
+
+      ros2 node info /cpp_node/cpp_node
+      
 ## 报错解决
 
 在ros_cpp_node.cpp文件，如果头文件变红
